@@ -19,10 +19,10 @@ You should have received a copy of the GNU Lesser General Public License
 along with this code.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-MAP_SIZE_PIXELS         = 500
-MAP_SIZE_METERS         = 10
+MAP_SIZE_PIXELS         = 700
+MAP_SIZE_METERS         = 3
 LIDAR_DEVICE            = '/dev/ttyACM2'
-mapa			= '/mapa'
+mapa			= '/mapa1'
 from breezyslam.algorithms import RMHC_SLAM
 from breezyslam.components import URG04LX as LaserModel
 
@@ -31,6 +31,7 @@ from breezylidar import URG04LX as Lidar
 from pltslamshow import SlamShow
 
 from pgm_utils import pgm_save
+
 if __name__ == '__main__':
     import sys
 

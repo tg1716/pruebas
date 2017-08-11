@@ -18,8 +18,8 @@ along with this code.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
 # Robot display params
-ROBOT_HEIGHT_MM = 500
-ROBOT_WIDTH_MM  = 300
+ROBOT_HEIGHT_MM = 50
+ROBOT_WIDTH_MM  = 30
 
 import matplotlib.pyplot as plt
 import matplotlib.cm as colormap
@@ -107,7 +107,7 @@ class SlamShow(object):
         s = self.map_scale_mm_per_pixel
 
         self.vehicle=self.ax.arrow(x_mm/s, y_mm/s, 
-                dx, dy, head_width=ROBOT_WIDTH_MM/s, head_length=ROBOT_HEIGHT_MM/s, fc='r', ec='r')
+                dx, dy, head_width=ROBOT_WIDTH_MM/s, head_length=ROBOT_HEIGHT_MM/s, fc='b', ec='r')
 
     def refresh(self):                   
 
